@@ -1,0 +1,58 @@
+//index.js
+//获取应用实例
+var app = getApp()
+Page({
+  data: {
+    "bannerList":[
+      {url:"../../img/1.jpeg"},
+      {url:"../../img/4.jpeg"},
+      {url:"../../img/3.jpeg"},
+      {url:"../../img/2.jpeg"},
+    ],
+    "active":0,
+    "recommentList":[{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    },{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    },{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    },{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    },{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    },{
+      "url":"../../img/game-1.jpg",
+      "name":"梦幻家园",
+      "ishot":true,
+      "isgood":true,
+      "desc":"小女孩来到了自己地海边别墅,现在她想要把这里按照自己地喜欢地风格装扮成属于自己地梦幻家园,您也跟她一起布置一下吧！"
+    }]
+  },
+  changeActiveIndex: function (e) {
+    console.log(e.target.id);
+    this.setData({
+      "active":e.target.id
+    });
+    console.log(this.data.active);
+  }
+})

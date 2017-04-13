@@ -1,0 +1,40 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor":"#2697fc",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "iconPath":"./icon/game.png",
+      "selectedIconPath":"./icon/game-active.png",
+      "text":"游戏"
+      },
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"./icon/gift.png",
+        "selectedIconPath":"./icon/gift-active.png",
+        "text":"礼包"
+        },
+        {
+          "pagePath":"pages/index/index",
+          "iconPath":"./icon/comm.png",
+          "selectedIconPath":"./icon/comm-active.png",
+          "text":"社区"
+        },
+        {
+          "pagePath":"pages/index/index",
+          "iconPath":"./icon/personal.png",
+          "selectedIconPath":"./icon/personal-active.png",
+          "text":"个人中心"
+          }
+      ]
+  }
+}

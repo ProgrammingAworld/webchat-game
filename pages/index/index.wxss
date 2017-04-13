@@ -1,0 +1,137 @@
+/**index.wxss**/
+page{
+  width: 100%;
+  height: 100%;
+}
+.indexBox{
+  width: 100%;
+  height: 100%;
+}
+/*  header部分样式 */
+.header{
+  width: 100%;
+  height: 44px;
+  display: flex;
+}
+.image{
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
+image{
+  width: 44px;
+  height: 44px;
+}
+.custom{
+  flex: 1;
+  padding-top: 4px;
+  padding-left: 6px;
+  font-size: 14px;
+}
+.follow{
+  width: 34px;
+  height: 34px;
+  background: #00b7ee;
+  color:white;
+  text-align: center;
+  line-height: 34px;
+  font-size: 14px;
+}
+/* banner图部分样式  */
+swiper-item{
+  width: 100%;
+  height: 110px;
+}
+.bannerImg{
+  width: 100%;
+  height: 100%;
+}
+.title{
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 34px;
+  border-bottom: 1px solid #eee;
+}
+.comm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  font-size: 14px;
+  height: 100%;
+  /*border-bottom: 1px solid cyan;*/
+}
+.active{
+  color:#0096ff;
+}
+/* 具体的游戏描述 */
+.gameBox{
+  width: 100%;
+  padding: 8px 12px;
+  display: flex;
+  flex-direction: column;
+}
+.gameDesc{
+  display: flex;
+  box-sizing: border-box;
+  margin: 8px 0;
+  margin-right: 20px;
+}
+.game-img{
+  width: 44px;
+  height: 44px;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+.gameDescWord{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.gameTop{
+  display: flex;
+}
+.gameDescWord text{
+  font-size: 14px;
+}
+.gameDescWord view{
+  font-size: 12px;
+}
+.hot{
+  color: red;
+  border: 1px solid red;
+  padding: 2px 4px;
+  border-radius: 2px;
+  margin: 0 4px;
+}
+.play{
+  color: purple;
+  border: 1px solid purple;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+.desc{
+  margin-top: 4px;
+  padding-right: 6px;
+  font-size: 12px !important;
+  color:#888;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.gameBox .button{
+  color:#0096ff;
+  border: 1px solid #0096ff;
+  display: flex;
+  box-sizing: border-box;
+  width: 42px;
+  height: 23px;
+  border-radius: 3px;
+  font-size: 14px;
+  align-items: center;
+  justify-content: center;
+}

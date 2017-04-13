@@ -1,0 +1,50 @@
+<!--index.wxml-->
+<view class="indexBox">
+  <!-- header -->
+  <view class="header">
+    <view class="image">
+      <image src="../../img/touxiang.png"></image>
+    </view>
+    <view class="custom">
+      <text>游客</text>
+    </view>
+    <view class="follow">关注</view>
+  </view>
+  <!-- banner图部分  -->
+  <view>
+    <swiper autoplay="true" indicator-dots="true">
+      <block wx:for="{{bannerList}}">
+        <swiper-item>
+          <image src="{{item.url}}" class="bannerImg"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 游戏推荐部分  -->
+  <view class="game-Recommend">
+    <!-- 游戏推荐的表部分 -->
+    <view class="title">
+      <view id="0" class="comm {{active == 0 ? 'active' : ''}}" bindtap="changeActiveIndex">热门</view>
+      <view id="1" class="comm {{active == 1 ? 'active' : ''}}" bindtap="changeActiveIndex">新上架</view>
+      <view id="2" class="comm {{active == 2 ? 'active' : ''}}" bindtap="changeActiveIndex">资讯</view>
+      <view id="3" class="comm {{active == 3 ? 'active' : ''}}" bindtap="changeActiveIndex">新开服</view>
+    </view>
+    <!-- 具体内容 -->
+    <view class="gameBox">
+      <block wx:for="{{recommentList}}">
+        <view class="gameDesc">
+          <image src="{{item.url}}" class="game-img"></image>
+          <view class="gameDescWord">
+            <view class="gameTop">
+              <text>{{item.name}}</text>
+              <view class="hot">热门</view>
+              <view class="play">好玩</view>
+            </view>
+            <text class="desc">{{item.desc}}</text>
+          </view>
+          <view class="button">进入</view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>
